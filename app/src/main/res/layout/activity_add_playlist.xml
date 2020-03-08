@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPlaylistActivity">
+
+    <EditText
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Playlist Name"
+        android:layout_marginTop="70dp"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:id="@+id/Playlist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <EditText
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Playlist_name"
+        android:hint="Playlist Genre"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:id="@+id/Playlist_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <EditText
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Playlist_genre"
+        android:hint="Playlist Rating (0-10.0) "
+        android:inputType="numberDecimal"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:id="@+id/Playlist_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <EditText
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Playlist_rating"
+        android:hint="Playlist Description"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:id="@+id/Playlist_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <Button
+        android:id="@+id/addPlaylistToDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Playlist"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Playlist_description">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
